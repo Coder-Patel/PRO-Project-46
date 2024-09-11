@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>
+            TIC TAC TOE
+        </title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <script type="module" src="./main.js"></script>
+    </head>
+    <body>
+        <!--Select A Game Mode Screen-->
+        <div class="screens" id="selectorScreen" style="display: block;">
+            <p id="gameName">
+                TIC TAC TOE
+            </p>
+
+            <br>
+            <button class="Sbutton" id="joinButton">Join A Game</button>
+            <br><br>
+            <button class="Sbutton" id="createButton">Create A Game</button>
+        </div>
+
+        <!--Create A Game Screen-->
+        <div class="screens" id="createScreen" style="display: none;">
+            <p id="gameName">
+                TIC TAC TOE
+            </p>
+
+            <br>
+            <input id="playerName1" placeholder="Enter Your Name Here.....">
+            <br>
+            <h2 id="roomGenerator"></h2>
+            <br>
+
+            <button class="submitButtons" id="submit1"> PLAY </button>
+        </div>
+
+        <!--Join A Game Screen-->
+        <div class="screens" id="joinScreen" style="display: none;">
+            <p id="gameName">
+                TIC TAC TOE
+            </p>
+            <input id="playerName2" placeholder="Enter Your Name Here.....">
+            <input id="roomId" placeholder="Enter Your Room ID Here.....">
+
+            <button class="submitButtons" id="submit2"> PLAY </button>
+        </div>
+
+        <!--Waiting Room-->
+        <div class="screens" id="waitScreen" style="display: none;">
+            <p id="gameName">
+                TIC TAC TOE
+            </p>
+
+            <p id="message">
+                Wait For Other Player To Join The Game
+            </p>
+        </div>
+
+        <!--Main Board-1-->
+        <div class="screens" id="boardScreen" style="display: none;">
+            <p id="gameName">
+                TIC TAC TOE
+            </p>
+
+            <!--First Line-->
+            <button class="boardButton" id="tl"></button>
+            <button class="boardButton" id="tm"></button>
+            <button class="boardButton" id="tr"></button><br>
+            
+            <!--Second Line-->
+            <button class="boardButton" id="ml"></button>
+            <button class="boardButton" id="mm"></button>
+            <button class="boardButton" id="mr"></button><br>
+
+            <!--Third Line-->
+            <button class="boardButton" id="bl"></button>
+            <button class="boardButton" id="bm"></button>
+            <button class="boardButton" id="br"></button><br>
+        </div>
+    </body>
+</html>
